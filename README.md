@@ -12,6 +12,7 @@ Caracteristici:
 - Secțiune pentru newsletter
 - Formular de contact cu informații despre afacere
 - Subsolul template-ului conține creditele + social media
+- Conținut responsive
 
 English Language:
 This is a simple template realized for a transport company, coded in HTML, CSS and JavaScript.
@@ -25,3 +26,4 @@ Features:
 - Section for newsletter
 - Contact form with information about business
 - The template footer contains credits + social media
+- Responsive content
