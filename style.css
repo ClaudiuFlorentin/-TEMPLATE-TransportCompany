@@ -1,0 +1,811 @@
+/* CUSTOM FONTS */
+@import url("css/fonts.css");
+
+/* CUSTOM ICONS */
+@import url("css/icons/css/all.css");
+
+/* CUSTOM COLORS */
+@import url("css/colors.css");
+
+/* BUILDING PAGE DESIGN */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+/* HEADER SECTION */
+header
+{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.headerSection
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+}
+
+.rightHeader
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* HEADER SECTION -> NAVIGATION MENU */
+#checkMenu,
+.responsiveMenu
+{
+    display: none;
+}
+
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.navMenu
+{
+    list-style-type: none;
+}
+
+.navMenu li
+{
+    display: inline;
+}
+
+.navMenu li .navItem
+{
+    color: var(--grey);
+    font-family: 'Mukta';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 1em;
+    user-select: none;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.navMenu li .navItem:hover
+{
+    color: var(--blue);
+}
+
+/* MAIN SECTION */
+main
+{
+    flex: 1;
+    width: 100%;
+    color: var(--darkgrey);
+    font-family: 'Mukta';
+    font-size: 16px;
+}
+
+.contentWrap
+{
+    word-break: break-word;
+    max-width: 1266px;
+    margin: 0 auto;
+}
+
+.contentMarginTop
+{
+    margin-top: 2em;
+}
+
+.contentMargin
+{
+    padding: 2em 0 2em 0;
+}
+
+/* MAIN SECTION -> SLIDER */
+.mainSlider .sliderPicture
+{
+    width: 100%;
+    height: 800px;
+    background-image: url("images/slider/picture1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* MAIN SECTION -> CIRCLE CARDS */
+.title
+{
+    color: var(--blue);
+    font-size: 36px;
+    text-align: center;
+}
+
+.circleCardSection
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.circleCard
+{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em 2em 1em;
+}
+
+.circleCard:hover > .headIcon
+{
+    color: #fff;
+    background-color: var(--blue);
+    border: 4px solid var(--blue);
+}
+
+.circleCard:hover > h1
+{
+    color: var(--blue);
+}
+
+.circleCard .headIcon
+{
+    font-size: 40px;
+    margin-bottom: 0.3em;
+    padding: 30px;
+    border: 4px solid var(--grey);
+    border-radius: 50%;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.circleCard h1
+{
+    font-size: 24px;
+    margin-bottom: 1em;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.circleCard .contentCard
+{
+    text-align: justify;
+}
+
+/* MAIN SECTION -> BACKGROUND INFO */
+.infoBackground
+{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(
+        rgb(65, 134, 224, 0.4),
+        rgb(65, 134, 224, 0.4)),
+        url("images/background_picture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.backgroundArea
+{
+    text-align: center;
+    line-height: 40px;
+}
+
+.backgroundArea h1
+{
+    color: #fff;
+    font-size: 40px;
+}
+
+.backgroundArea p
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+.backgroundArea .backgroundBtn
+{
+    margin-top: 3em;
+}
+
+.backgroundArea a
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.backgroundArea a:hover
+{
+    color: var(--blue);
+    background-color: #fff;
+}
+
+/* MAIN SECTION -> BOX CARDS */
+.wrapColor
+{
+    background-color: rgb(243, 243, 243);
+}
+
+.boxCardSection
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.boxCard
+{
+    width: 600px;
+    height: auto;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    margin: 0.5em;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+.boxCard:hover
+{
+    transform: scale(1.02);
+}
+
+.boxCard img
+{
+    width: 100%;
+    height: auto;
+}
+
+.boxContent
+{
+    margin: 1em 2em 2em;
+}
+
+.boxContent .boxTitle
+{
+    color: var(--blue);
+    font-size: 28px;
+}
+
+/* MAIN SECTION -> NEWSLETTER */
+.flexNewsletter
+{
+    display: flex;
+}
+
+/* MAIN SECTION -> NEWSLETTER -> LEFT SIDE */
+.leftSection
+{
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.newsletterPicture
+{
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgb(65, 134, 224, 0.4),
+        rgb(65, 134, 224, 0.4)),
+        url("images/newsletter_picture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.newsletterPicture:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.newsletterContent
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.newsletterContent h1,
+.newsletterContent p
+{
+    color: #fff;
+    line-height: 30px;
+}
+
+.newsletterContent p
+{
+    font-size: 20px;
+}
+
+/* MAIN SECTION -> NEWSLETTER -> RIGHT SIDE */
+.rightSection
+{
+    min-width: 20%;
+    padding: 2em 2.5em 2em 2.5em;
+    background-color: var(--blue);
+}
+
+.rightSection h1
+{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.inputSection
+{
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.inputSection span
+{
+    color: #fff;
+    font-size: 16px;
+}
+
+.inputSection input
+{
+    width: 100%;
+    color: var(--grey);
+    font-size: 14px;
+    font-family: 'Mukta';
+    padding: 5px 10px 5px 10px;
+    border: 0;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.inputSection input:focus
+{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.rightSection input[type = "submit"]
+{
+    margin-top: 1em;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: rgb(31, 87, 161);
+    font-size: 14px;
+    font-family: 'Mukta';
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.rightSection input[type = "submit"]:hover
+{
+    background-color: rgb(34, 100, 187);
+}
+
+/* CONTACT SECTION */
+.contactSection
+{
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTACT SECTION -> LEFT SIDE */
+.contactLeft
+{
+    position: relative;
+    width: 60%;
+    background-color: rgb(245, 245, 245);
+}
+
+.contactLeft .infoCardContent
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-11%, -50%);
+    color: rgb(153, 153, 153);
+    width: 65%;
+    font-size: 18px;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contactLeft .infoCardContent .titleContact
+{
+    position: relative;
+    color: var(--blue);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 2px solid rgb(223, 223, 223);
+}
+
+.contactLeft .infoCardContent .titleContact::after
+{
+    position: absolute;
+    bottom: -2px;
+    left: 22.5%;
+    content: "";
+    background-color: var(--blue);
+    width: 55%;
+    height: 2px;
+}
+
+.contactLeft .optionMargin
+{
+    margin-bottom: 6px;
+}
+
+.contactLeft .infoCardContent .contactOption
+{
+    display: flex;
+    align-items: center;
+}
+
+.contactLeft .iconContact
+{
+    color: var(--blue);
+    font-size: 22px;
+    width: 50px;
+    text-align: center;
+}
+
+/* CONTACT SECTION -> RIGHT SIDE */
+.contactRight
+{
+    width: 40%;
+    background: linear-gradient(
+        rgb(65, 134, 224, 0.4),
+        rgb(65, 134, 224, 0.4)),
+        url("images/contact_picture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em 3em 2em 7em;
+}
+
+.contactRight .title
+{
+    color: #fff;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.contactRight .inputContact
+{
+    margin-bottom: 1em;
+}
+
+.contactRight .inputContact input,
+.contactRight .inputContact textarea
+{
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'Mukta';
+    padding-bottom: 5px;
+    border: 0;
+    border-bottom: 2px solid #fff;
+}
+
+.contactRight .inputContact input::placeholder,
+.contactRight .inputContact textarea::placeholder
+{
+    color: #fff;
+}
+
+.contactRight .inputContact textarea
+{
+    resize: none;
+    height: 100px;
+}
+
+.contactRight input[type = "submit"]
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    font-family: 'Mukta';
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgb(31, 87, 161);
+    cursor: pointer;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.contactRight input[type = "submit"]:hover
+{
+    background-color: rgb(34, 100, 187);
+}
+
+/* FOOTER SECTION */
+footer
+{
+    width: 100%;
+    height: auto;
+}
+
+.footerSection
+{
+    background-color: var(--blue);
+    padding: 0.6em 0 0.6em 0;
+}
+
+.footerFlex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FOOTER SECTION -> LEFT SIDE */
+.footerLeft p
+{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Mukta';
+    margin-left: 1em;
+}
+
+/* FOOTER SECTION -> RIGHT SIDE */
+.socialIcon
+{
+    color: #fff;;
+    font-size: 20px;
+    width: 50px;
+    padding: 0.7em 0 0.7em 0;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 0.4em;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.socialIcon:hover
+{
+    color: var(--blue);
+    background-color: #fff;
+    border-radius: 50%;
+    transform: rotateY(360deg);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE */
+@media all and (max-width: 1300px)
+{
+    /* HEADER SECTION */
+    .headerSection
+    {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .logoSection img
+    {
+        width: 250px;
+        height: auto;
+    }
+
+    /* NEWSLETTER SECTION */
+    .rightSection h1
+    {
+        color: #fff;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+}
+
+@media all and (max-width: 1000px)
+{
+    /* HEADER SECTION */
+    header
+    {
+        position: relative;
+    }
+
+    /* HEADER SECTION -> MENU */
+    .responsiveMenu
+    {
+        display: block;
+        color: var(--blue);
+        font-size: 26px;
+        padding: 6px 8px 6px 8px;
+        border: 2px solid var(--blue);
+        cursor: pointer;
+        -webkit-transition: 0.15s ease-in-out;
+        -moz-transition: 0.15s ease-in-out;
+        -o-transition: 0.15s ease-in-out;
+        transition: 0.15s ease-in-out;
+    }
+
+    .responsiveMenu:hover
+    {
+        color: #fff;
+        background-color: var(--blue);
+        border: 2px solid var(--blue);
+    }
+
+    .rightHeader
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1em 2em;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        border-bottom: 6px solid var(--blue);
+    }
+
+    .navMenu li
+    {
+        display: block;
+        margin-bottom: 0.5em;
+        text-align: left;
+    }
+
+    #checkMenu:checked ~ .rightHeader
+    {
+        display: block;
+        height: auto;
+    }
+
+    /* NEWSLETTER SECTION */
+    .flexNewsletter
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .leftSection
+    {
+        width: 100%;
+        height: 250px;  
+    }
+
+    /* CONTACT SECTION - LEFT */
+    .contactLeft .infoCardContent
+    {
+        font-size: 16px;
+    }
+
+    .contactLeft .infoCardContent .titleContact
+    { 
+        font-size: 24px;     
+    }
+}
+
+@media all and (max-width: 900px)
+{
+    /* CONTACT SECTION - LEFT */
+    .contactLeft .infoCardContent
+    {
+        width: 85%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* CONTACT SECTION - RIGHT */
+    .contactRight
+    {
+        padding: 2em 3em 2em 3em;
+    }
+}
+
+@media all and (max-width: 800px)
+{
+    /* CONTACT SECTION */
+    .contactSection
+    {
+        flex-direction: column;
+    }
+
+    /* CONTACT SECTION - LEFT */
+    .contactLeft
+    {
+        width: 100%;
+        height: 280px;
+    }
+
+    .contactLeft .infoCardContent
+    {
+        width: 87%;
+    }
+    
+    .contactRight
+    {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 700px)
+{
+    .footerFlex
+    {
+        flex-direction: column;
+    }
+
+    .footerLeft p
+    {
+        margin-left: 0;
+        margin: 0 0 0.4em 0;
+    }
+
+    .socialIcon
+    {
+        font-size: 16px;
+        width: 40px;
+        padding: 0.7em 0 0.7em 0;
+    }
+}
