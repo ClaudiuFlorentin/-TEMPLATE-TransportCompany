@@ -13,6 +13,7 @@ Caracteristici:
 - Formular de contact cu informații despre afacere
 - Subsolul template-ului conține creditele + social media
 
+
 English Language:
 This is a simple template realized for a transport company, coded in HTML, CSS and JavaScript.
 
