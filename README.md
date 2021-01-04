@@ -1,6 +1,6 @@
 # [TEMPLATE] Transport Company
  
-Limba Română:
+Română:
 Acesta este un simplu template realizat pentru o companie de transport, codat în HTML, CSS și JavaScript.
 
 Caracteristici:
@@ -14,7 +14,7 @@ Caracteristici:
 - Subsolul template-ului conține creditele + social media
 - Conținut responsive
 
-English Language:
+English:
 This is a simple template realized for a transport company, coded in HTML, CSS and JavaScript.
 
 Features:
