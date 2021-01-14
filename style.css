@@ -123,14 +123,69 @@ main
 }
 
 /* MAIN SECTION -> SLIDER */
-.mainSlider .sliderPicture
+.sliderSection
 {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 800px;
-    background-image: url("images/slider/picture1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: auto;
+    position: relative;
+}
+
+.sliderSection .sliderImage
+{
+    display: none;
+}
+
+.sliderSection img
+{
+    max-width: 100%;
+}
+
+/* SLIDER SECTION -> BUTTONS */
+.prev, .next
+{
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 22px;
+    font-family: 'ABeeZee';
+    padding: 1em;
+    top: 45%;
+    user-select: none;
+    transition: 0.1s linear;
+}
+
+.next
+{
+    right: 0;
+}
+
+.prev
+{
+    left: 0;
+}
+
+.prev:hover, .next:hover
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* SLIDER SECTION -> FADE EFFECT */
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade
+{
+    from { opacity: .2; }
+    to { opacity: 1; }
 }
 
 /* MAIN SECTION -> CIRCLE CARDS */
@@ -761,6 +816,13 @@ footer
     {
         padding: 2em 3em 2em 3em;
     }
+
+    /* SLIDER - BUTTONS */
+    .prev, .next
+    {
+        top: 40%;
+        padding: 0.6em 0.8em 0.6em 0.8em;
+    }
 }
 
 @media all and (max-width: 800px)
@@ -807,5 +869,15 @@ footer
         font-size: 16px;
         width: 40px;
         padding: 0.7em 0 0.7em 0;
+    }
+}
+
+@media all and (max-width: 500px)
+{
+    /* SLIDER - BUTTONS */
+    .prev, .next
+    {
+        top: 35%;
+        padding: 0.4em 0.6em 0.4em 0.6em;
     }
 }
