@@ -1,9 +1,8 @@
 # [TEMPLATE] Transport Company
 
-RELEASE: v1.0 #//#
+<h2>RELEASE: v1.0</h2>
 
-Română:
-Acesta este un simplu template realizat pentru o companie de transport, codat în HTML, CSS și JavaScript.
+<b>Română:</b> Acesta este un simplu template realizat pentru o companie de transport, codat în HTML, CSS și JavaScript.
 
 Caracteristici:
 - Meniu de navigare
@@ -15,8 +14,7 @@ Caracteristici:
 - Subsolul template-ului conține creditele + social media
 - Conținut responsive
 
-English:
-This is a simple template realized for a transport company, coded in HTML, CSS and JavaScript.
+<b>English:</b> This is a simple template realized for a transport company, coded in HTML, CSS and JavaScript.
 
 Features:
 - Navigation Menu
@@ -28,12 +26,12 @@ Features:
 - The template footer contains credits + social media
 - Responsive content
 
-UPDATE: v1.1 #//#
+<h2>UPDATE: v1.1</h2>
 
-Română:
+<b>Română:</b>
 - Slider introdus cu comandă manuală și automată la fiecare 7 secunde.
 - Meniul de navigare fixat pe scroll scos temporar din cauza unor probleme.
 
-English:
+<b>English:</b>
 - Introducing slider with manually and automatically command on every 7 seconds.
 - Navigation menu fixed on scroll temporarily removed due to problems.
