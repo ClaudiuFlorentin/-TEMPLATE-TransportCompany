@@ -1,4 +1,5 @@
 # [TEMPLATE] Transport Company
+<b>LIVE Preview:</b> http://booking.royaltrip.ro/template-transportcompany/
 
 <h2>RELEASE: v1.0</h2>
 
@@ -35,3 +36,19 @@ Features:
 <b>English:</b>
 - Introducing slider with manually and automatically command on every 7 seconds.
 - Navigation menu fixed on scroll temporarily removed due to problems.
+
+<h2>UPDATE: v1.2</h2>
+
+<b>Română:</b>
+- Reintroduse meniul fixat pe scroll după ce problemele au fost rezolvate.
+- Făcute legături din meniu cu fiecare secțiune din pagină.
+- Buton adăugat pentru revenire în vârful site-ului.
+- Aspect schimbat pentru cartonașele poziționate în formă de grilă.
+- Îmbunătățiri aduse modului responsive și suport până la Galaxy Fold.
+
+<b>English:</b>
+- Reintroduced the fixed menu on scroll after problems has been solved.
+- Connections made from menu with every page section.
+- Button added for returning on the top of page.
+- Design changed for the cards positioned in shape of grid.
+- Improvements for responsive mode and support up to Galaxy Fold.
